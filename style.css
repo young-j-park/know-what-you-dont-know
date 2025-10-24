@@ -705,37 +705,58 @@ footer a {
     margin: 2rem 0 3rem 0;
 }
 
-.innovation-step {
-    /* background: var(--light-bg); */
+/* Calibrated Confidence Box (Blue theme) */
+.calibration-box {
+    background: linear-gradient(135deg, rgba(3, 102, 214, 0.05), rgba(3, 102, 214, 0.02));
+    border: 2px solid rgba(3, 102, 214, 0.2);
+    border-radius: 12px;
     padding: 2rem;
-    /* border-radius: 12px; */
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
-.innovation-step h3 {
+.calibration-box h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
-.innovation-step p {
-    margin: 0;
+.calibration-box > p {
+    margin-bottom: 2rem;
     line-height: 1.6;
 }
 
-/* PRM Diagram Styling */
-.prm-diagram {
+/* Smart Allocation Box (Green theme) */
+.allocation-box {
+    background: linear-gradient(135deg, rgba(40, 167, 69, 0.05), rgba(40, 167, 69, 0.02));
+    border: 2px solid rgba(40, 167, 69, 0.2);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.allocation-box h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.allocation-box > p {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* PRM Diagram inside box */
+.calibration-box .prm-diagram {
     background: white;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    margin: 2rem auto;
+    margin: 2rem auto 0 auto;
     text-align: center;
-    max-width: 800px;  /* Limit overall container width */
+    max-width: 800px;
 }
 
 .prm-diagram img {
     width: 100%;
-    max-width: 800px;  /* Limit image width to 800px */
+    max-width: 800px;
     height: auto;
     border-radius: 8px;
     margin: 0 auto;
@@ -757,10 +778,19 @@ footer a {
     font-size: 1.05rem;
 }
 
+/* Video comparison inside allocation box */
+.allocation-box .video-comparison {
+    margin-top: 2rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
+    .calibration-box,
+    .allocation-box {
+        padding: 1.5rem;
+    }
+    
     .prm-diagram {
         padding: 1rem;
-        max-width: 100%;
     }
 }
