@@ -350,3 +350,168 @@ footer a {
         font-size: 1.5rem;
     }
 }
+
+/* Calibration Challenge Section */
+#calibration-challenge {
+    background: var(--light-bg);
+    padding: 3rem;
+    border-radius: 12px;
+    margin-bottom: 4rem;
+}
+
+.policy-comparison {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin: 3rem 0;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.policy-item {
+    text-align: center;
+}
+
+.policy-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+.policy-item img:hover {
+    transform: scale(1.05);
+}
+
+.policy-label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.sublabel {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #586069;
+    margin-top: 0.5rem;
+}
+
+.vs-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vs-divider span {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--primary-color);
+    background: var(--light-bg);
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+}
+
+.challenge-explanation {
+    margin: 3rem 0;
+}
+
+.challenge-explanation h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.mismatch-box {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 6px;
+}
+
+.mismatch-box h4 {
+    color: #856404;
+    margin-bottom: 0.5rem;
+}
+
+.mismatch-box p {
+    margin: 0;
+    color: #856404;
+}
+
+.why-calibrate {
+    margin: 3rem 0;
+}
+
+.why-calibrate h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.calibration-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.calibration-benefits li {
+    padding: 0.75rem 0;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.calibration-benefits li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.highlight-text {
+    background: linear-gradient(135deg, rgba(40, 167, 69, 0.1), rgba(3, 102, 214, 0.1));
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+    margin: 2rem 0;
+}
+
+.prm-advantage {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.prm-advantage ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.prm-advantage li {
+    margin: 0.5rem 0;
+}
+
+/* Responsive design for policy comparison */
+@media (max-width: 768px) {
+    .policy-comparison {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .vs-divider {
+        transform: rotate(90deg);
+    }
+    
+    .policy-item img {
+        max-width: 200px;
+    }
+}
