@@ -170,18 +170,36 @@
         </section>
 
         <section id="innovation">
-            <h2>Instance-Adaptive Scaling</h2>
+            <h2>Instance-Adaptive Scaling with Calibrated PRMs</h2>
             
-            <div class="two-column">
-                <div>
-                    <h3>📊 Calibrated Success Estimate</h3>
-                    <p>We use quantile regression to fix process reward models (PRMs)' overconfidence, 
-                    providing reliable success probability estimates.</p>
+<div class="innovation-flow">
+                <!-- Calibrated Confidence -->
+                <div class="innovation-step">
+                    <h3>📊 Calibrated Confidence</h3>
+                    <p>
+                        We use quantile regression to fix AI overconfidence, 
+                        providing reliable uncertainty estimates with confidence intervals.
+                    </p>
                 </div>
-                <div>
+                
+                <!-- PRM Diagram -->
+                <div class="prm-diagram">
+                    <img src="assets/images/prm.jpg" alt="PRM Calibration Process">
+                    <p class="caption">
+                        <strong>From Overconfident to Calibrated:</strong> Our method transforms 
+                        existing PRMs (which overestimate with reward 0.95) into calibrated models 
+                        that provide uncertainty quantification through quantile predictions 
+                        (10%, 50%, 90% confidence intervals).
+                    </p>
+                </div>
+
+                <!-- Smart Allocation -->
+                <div class="innovation-step">
                     <h3>🧠 Smart Allocation</h3>
-                    <p>Instance-adaptive scaling (IAS) dynamically adjusts computational effort with 
-                    mathematical guarantees.</p>
+                    <p>
+                        IAS dynamically adjusts computational effort with mathematical guarantees, 
+                        allocating resources based on problem difficulty.
+                    </p>
                 </div>
             </div>
 

@@ -699,3 +699,72 @@ footer a {
         margin: 0 auto;
     }
 }
+
+/* Innovation Section Flow */
+.innovation-flow {
+    margin: 2rem 0 3rem 0;
+}
+
+.innovation-step {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.innovation-step h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.innovation-step p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* PRM Diagram Styling */
+.prm-diagram {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.prm-diagram img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+}
+
+.prm-diagram .caption {
+    margin-top: 1.5rem;
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.prm-diagram .caption strong {
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .prm-diagram {
+        padding: 1rem;
+    }
+    
+    .innovation-step {
+        padding: 1.5rem;
+    }
+}
