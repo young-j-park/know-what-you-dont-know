@@ -706,9 +706,9 @@ footer a {
 }
 
 .innovation-step {
-    background: var(--light-bg);
+    /* background: var(--light-bg); */
     padding: 2rem;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     margin-bottom: 2rem;
 }
 
