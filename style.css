@@ -578,11 +578,50 @@ footer a {
     }
 }
 
+/* Calibration Comparison - Single Row */
 .calibration-comparison {
-    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 4 columns, equal width */
     gap: 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.comparison-item {
+    background: white;
+    padding: 0.75rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .comparison-item img {
-    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Responsive: Stack on smaller screens */
+@media (max-width: 1024px) {
+    .calibration-comparison {
+        grid-template-columns: repeat(2, 1fr);  /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .calibration-comparison {
+        grid-template-columns: 1fr;  /* Single column on mobile */
+    }
+}
+
+/* Optional: Add hover effect */
+.comparison-item {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.comparison-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
