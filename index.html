@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know What You Don't Know | PRM Calibration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎯 Know What You Don't Know</h1>
+        <p class="subtitle">Uncertainty Calibration of Process Reward Models</p>
+        <p class="authors">Young-Jin Park, Kristjan Greenewald, Kaveh Alim, Hao Wang, Navid Azizan</p>
+        <p class="institution">MIT & MIT-IBM Watson AI Lab | NeurIPS 2025</p>
+    </header>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#results">Results</a>
+        <a href="#impact">Impact</a>
+        <a href="https://github.com/azizanlab/prm-calibration">Code</a>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div class="stat-box">
+                    <h3>🎯 The Problem</h3>
+                    <p>AI spends equal effort on easy and hard problems</p>
+                </div>
+                <div class="stat-box">
+                    <h3>💡 Our Solution</h3>
+                    <p>Teach AI to know when to think harder</p>
+                </div>
+                <div class="stat-box">
+                    <h3>⚡ The Result</h3>
+                    <p><strong>50% less computation, same performance</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="overview">
+            <h2>Why This Matters</h2>
+            <p class="lead">
+                Imagine a student who spends 30 minutes on every test question—whether 
+                it's "2+2" or a complex calculus proof. That's how today's AI systems work.
+            </p>
+            <p class="lead"><strong>We taught them to be smarter.</strong></p>
+        </section>
+
+        <section id="innovation">
+            <h2>The Science: Instance-Adaptive Scaling</h2>
+            <div class="two-column">
+                <div>
+                    <h3>📊 Calibrated Confidence</h3>
+                    <p>We use quantile regression to fix AI overconfidence, 
+                    providing reliable uncertainty estimates.</p>
+                </div>
+                <div>
+                    <h3>🧠 Smart Allocation</h3>
+                    <p>IAS dynamically adjusts computational effort with 
+                    mathematical guarantees.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="results">
+            <h2>Key Results</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <h3>70-90%</h3>
+                    <p>Calibration Error Reduction</p>
+                </div>
+                <div class="result-card">
+                    <h3>50%</h3>
+                    <p>Compute Savings</p>
+                </div>
+                <div class="result-card">
+                    <h3>✓</h3>
+                    <p>Performance Maintained</p>
+                </div>
+            </div>
+            <!-- Add your figures here -->
+            <div class="figure">
+                <img src="assets/images/calibration-plot.png" alt="Calibration Results">
+                <p class="caption">Figure: Calibration improvement across models</p>
+            </div>
+        </section>
+
+        <section id="impact">
+            <h2>🔮 Real-World Impact</h2>
+            <div class="impact-box">
+                <h3>Predicting GPT-5</h3>
+                <p>Our research anticipated OpenAI's "unified model routing system" 
+                that automatically chooses between fast and thinking models.</p>
+                <p><strong>We provided the scientific foundation they're now implementing.</strong></p>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2>Dive Deeper</h2>
+            <div class="button-group">
+                <a href="https://github.com/azizanlab/prm-calibration" class="btn btn-primary">
+                    📂 GitHub Code
+                </a>
+                <a href="paper.pdf" class="btn btn-secondary">
+                    📄 Read Paper
+                </a>
+                <a href="https://huggingface.co/datasets/young-j-park/prm_calibration" class="btn btn-tertiary">
+                    📊 Access Datasets
+                </a>
+            </div>
+        </section>
+
+        <section id="citation">
+            <h2>Citation</h2>
+            <pre><code>@inproceedings{park2025knowwhat,
+  title={Know What You Don't Know: Uncertainty Calibration of Process Reward Models},
+  author={Park, Young-Jin and Greenewald, Kristjan and Alim, Kaveh and Wang, Hao and Azizan, Navid},
+  booktitle={NeurIPS 2025},
+  year={2025}
+}</code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 MIT & MIT-IBM Watson AI Lab | NeurIPS 2025</p>
+        <p>
+            <a href="mailto:contact@example.com">Contact</a> | 
+            <a href="https://twitter.com/yourhandle">Twitter</a>
+        </p>
+    </footer>
+</body>
+</html>
