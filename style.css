@@ -309,3 +309,55 @@ footer a {
         width: 100%;
     }
 }
+
+/* Motivation Image Specific Styling */
+.figure.motivation-figure {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.figure.motivation-figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive sizing */
+@media (max-width: 1024px) {
+    .figure.motivation-figure {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .figure.motivation-figure {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+/* Tagline Styling */
+.tagline {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 3rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(3, 102, 214, 0.05), rgba(111, 66, 193, 0.05));
+    border-radius: 12px;
+}
+
+.tagline strong {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Responsive tagline */
+@media (max-width: 768px) {
+    .tagline {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+}
