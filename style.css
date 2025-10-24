@@ -516,31 +516,37 @@ footer a {
     }
 }
 
-/* Error Histogram Styling */
+/* Error Histogram Styling - Smaller and Side-by-Side */
 .error-histograms {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 2rem 0;
 }
 
 .histogram-item {
+    flex: 0 1 400px;  /* Each item max 400px */
     background: white;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .histogram-item img {
     width: 100%;
+    max-width: 350px;  /* Limit individual image size */
     height: auto;
     border-radius: 4px;
     margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .histogram-item .caption {
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 0.85rem;  /* Slightly smaller text */
+    line-height: 1.5;
     color: #586069;
     margin: 0;
 }
@@ -548,7 +554,8 @@ footer a {
 .histogram-item .caption strong {
     color: var(--text-color);
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
 }
 
 .key-insight {
@@ -564,8 +571,9 @@ footer a {
     color: #856404;
 }
 
-@media (max-width: 768px) {
+/* Stack on mobile */
+@media (max-width: 900px) {
     .error-histograms {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;  /* Single column on mobile */
     }
 }
