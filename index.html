@@ -34,7 +34,7 @@
                 </div>
                 <div class="stat-box">
                     <h3>⚡ The Result</h3>
-                    <p>Up to 75% less computation, similar performance</p>
+                    <p>Up to 75% reduction in computation, with comparable performance</p>
                 </div>
             </div>
         </section>
@@ -47,7 +47,7 @@
             </p>
             
             <div class="video-container">
-                <video controls autoplay loop muted playsinline>
+                <video controls loop muted playsinline>
                     <source src="assets/videos/naive_easy.MP4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -67,7 +67,7 @@
             
             <div class="two-column">
                 <div>
-                    <h3>📊 Calibrated Confidence</h3>
+                    <h3>📊 Calibrated Success Estimate</h3>
                     <p>We use quantile regression to fix process reward models (PRMs)' overconfidence, 
                     providing reliable success probability estimates.</p>
                 </div>
@@ -98,7 +98,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="results">
             <h2>Key Results</h2>
             <div class="results-grid">
@@ -165,5 +165,30 @@
             <a href="https://twitter.com/yourhandle">Twitter</a>
         </p>
     </footer>
+    <script>
+        // Video autoplay on scroll
+        const videos = document.querySelectorAll('video');
+        
+        const observerOptions = {
+            root: null,
+            threshold: 0.5, // Play when 50% of video is visible
+            rootMargin: '0px'
+        };
+        
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const video = entry.target;
+                if (entry.isIntersecting) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        }, observerOptions);
+        
+        videos.forEach(video => {
+            videoObserver.observe(video);
+        });
+    </script>
 </body>
 </html>
