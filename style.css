@@ -625,3 +625,77 @@ footer a {
     transform: translateY(-4px);
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
+
+/* Header Button Styling */
+.header-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.header-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-icon {
+    font-size: 1.2rem;
+}
+
+.btn-text {
+    font-size: 1rem;
+}
+
+/* Individual button colors (optional accent on hover) */
+.btn-paper:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-arxiv:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-code:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-data:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .header-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .header-btn {
+        justify-content: center;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
