@@ -11,7 +11,7 @@
         <h1>🎯 Know What You Don't Know</h1>
         <p class="subtitle">Uncertainty Calibration of Process Reward Models</p>
         <p class="authors">Young-Jin Park, Kristjan Greenewald, Kaveh Alim, Hao Wang, Navid Azizan</p>
-        <p class="institution">MIT & MIT-IBM Watson AI Lab | NeurIPS 2025</p>
+        <p class="institution">MIT & MIT-IBM Watson AI Lab & Red Hat AI Innovation | NeurIPS 2025</p>
     </header>
 
     <nav>
@@ -191,6 +191,37 @@
 
         <section id="results">
             <h2>Key Results</h2>
+            <h3>Calibration Method Comparison</h3>
+            <p class="lead">
+                Our quantile regression (QR) approach outperforms traditional calibration baselines 
+                (temperature scaling, isotonic regression, histogram binning) across both 
+                in-distribution (MATH500) and out-of-distribution (AIME24-25) datasets.
+            </p>
+            
+            <div class="calibration-comparison">
+                <div class="comparison-item">
+                    <img src="assets/images/brier_scores_errbar_posthoc_QwenPRM-7B_Llama-3_2-1B-Instruct.png" 
+                         alt="Llama-3.2-1B calibration comparison">
+                </div>
+                <div class="comparison-item">
+                    <img src="assets/images/brier_scores_errbar_posthoc_QwenPRM-7B_Llama-3_1-8B-Instruct.png" 
+                         alt="Llama-3.1-8B calibration comparison">
+                </div>
+                <div class="comparison-item">
+                    <img src="assets/images/brier_scores_errbar_posthoc_QwenPRM-7B_Qwen2_5-Math-7B-Instruct.png" 
+                         alt="Qwen2.5-Math-7B calibration comparison">
+                </div>
+                <div class="comparison-item">
+                    <img src="assets/images/brier_scores_errbar_posthoc_QwenPRM-7B_DeepSeek-R1-Distill-Qwen-7B.png" 
+                         alt="DeepSeek-R1-Distill-Qwen-7B calibration comparison">
+                </div>
+            </div>
+            <p class="caption" style="text-align: center; max-width: 900px; margin: 1rem auto;">
+                <strong>Figure:</strong> Brier score comparison across calibration methods on MATH500 
+                (in-distribution) and AIME24-25 (out-of-distribution). Lower is better. Our QR method 
+                (purple) consistently achieves the lowest calibration error, with particularly strong 
+                improvements on challenging out-of-distribution problems.
+            </p>
             <!-- Add your figures here -->
             <div class="figure">
                 <img src="assets/images/main_results.png" alt="Calibration Results">
@@ -227,8 +258,7 @@
     <footer>
         <p>© 2025 MIT & MIT-IBM Watson AI Lab | NeurIPS 2025</p>
         <p>
-            <a href="mailto:contact@example.com">Contact</a> | 
-            <a href="https://twitter.com/yourhandle">Twitter</a>
+            <a href="mailto:yjpark0105@gmail.com">Contact</a>
         </p>
     </footer>
     <script>
