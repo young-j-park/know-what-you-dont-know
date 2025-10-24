@@ -577,3 +577,12 @@ footer a {
         grid-template-columns: 1fr;  /* Single column on mobile */
     }
 }
+
+.calibration-comparison {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.comparison-item img {
+    max-width: 250px;
+}
