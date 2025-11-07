@@ -794,3 +794,23 @@ footer a {
         padding: 1rem;
     }
 }
+
+/* youtube */
+.youtube-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 3rem auto 0;
+    padding: 0 1rem;
+}
+
+.youtube-container iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.youtube-container .caption {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
